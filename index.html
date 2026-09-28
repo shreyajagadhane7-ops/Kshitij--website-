@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For Kshitij 🤍</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-family: Georgia, serif;
+      background: linear-gradient(135deg, #f8eeee, #f5e4e7, #eee1e5);
+      color: #3d3033;
+    }
+
+    .page {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      position: relative;
+    }
+
+    .small {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      opacity: 0.65;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 64px;
+      font-weight: normal;
+      font-style: italic;
+      margin-bottom: 25px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .message {
+      max-width: 330px;
+      font-size: 18px;
+      line-height: 1.8;
+      font-style: italic;
+      opacity: 0.85;
+      animation: fadeUp 2s ease;
+    }
+
+    .name {
+      margin-top: 30px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: 3px;
+      opacity: 0.7;
+    }
+
+    .button {
+      margin-top: 45px;
+      padding: 13px 28px;
+      border: 1px solid #8d7379;
+      border-radius: 30px;
+      background: rgba(255,255,255,0.35);
+      color: #3d3033;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      letter-spacing: 2px;
+      transition: 0.3s;
+      animation: fadeUp 2.5s ease;
+    }
+
+    .button:hover {
+      background: rgba(255,255,255,0.7);
+      transform: translateY(-3px);
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 18px;
+      opacity: 0.35;
+      animation: float 5s infinite ease-in-out;
+    }
+
+    .one {
+      top: 18%;
+      left: 15%;
+    }
+
+    .two {
+      top: 28%;
+      right: 13%;
+      animation-delay: 1s;
+    }
+
+    .three {
+      bottom: 20%;
+      left: 20%;
+      animation-delay: 2s;
+    }
+
+    .four {
+      bottom: 27%;
+      right: 18%;
+      animation-delay: 3s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 0.65; }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="heart one">♡</div>
+    <div class="heart two">♡</div>
+    <div class="heart three">♡</div>
+    <div class="heart four">♡</div>
+
+    <div class="small">a little something for you</div>
+
+    <h1>It's you.</h1>
+
+    <p class="message">
+      Out of all the people in this world…<br>
+      somehow, I found you.
+    </p>
+
+    <div class="name">KSHITIJ</div>
+
+    <a href="page2.html" class="button">keep going →</a>
+
+  </div>
+
+</body>
+</html>

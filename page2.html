@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Little Memories 🤍</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#fff0f5,#ffe4ec,#fff8fa);
+    font-family:Arial,sans-serif;
+    color:#4b3038;
+    overflow-x:hidden;
+}
+
+/* Floating hearts */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:20px;
+    opacity:.6;
+    animation:float 7s linear infinite;
+    z-index:0;
+}
+
+.h1{left:10%;animation-delay:1s;}
+.h2{left:30%;animation-delay:3s;}
+.h3{left:55%;animation-delay:0s;}
+.h4{left:75%;animation-delay:2s;}
+.h5{left:90%;animation-delay:4s;}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+    20%{
+        opacity:.7;
+    }
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* Main */
+
+.container{
+    position:relative;
+    z-index:2;
+    max-width:430px;
+    margin:auto;
+    padding:35px 18px 45px;
+    text-align:center;
+}
+
+.title{
+    font-family:Georgia,serif;
+    font-size:32px;
+    color:#9b5269;
+    margin-bottom:8px;
+    animation:fadeDown 1.2s ease;
+}
+
+.subtitle{
+    font-size:15px;
+    font-style:italic;
+    line-height:1.6;
+    opacity:.8;
+    margin-bottom:28px;
+    animation:fadeUp 1.5s ease;
+}
+
+/* Photos */
+
+.photo{
+    width:100%;
+    border-radius:22px;
+    margin-bottom:18px;
+    display:block;
+    object-fit:cover;
+    box-shadow:0 8px 25px rgba(100,50,70,.18);
+    border:5px solid rgba(255,255,255,.8);
+    animation:photoIn 1.2s ease;
+}
+
+.big{
+    height:420px;
+}
+
+.small-row{
+    display:flex;
+    gap:12px;
+    margin-bottom:18px;
+}
+
+.small-row .photo{
+    width:50%;
+    height:240px;
+    margin-bottom:0;
+}
+
+.memory{
+    background:rgba(255,255,255,.65);
+    border-radius:20px;
+    padding:18px 15px;
+    margin:8px 0 25px;
+    box-shadow:0 5px 20px rgba(100,50,70,.08);
+}
+
+.memory p{
+    font-family:Georgia,serif;
+    font-size:17px;
+    line-height:1.6;
+    color:#704453;
+}
+
+/* Button */
+
+.next{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:30px;
+    background:#a85b73;
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    letter-spacing:1px;
+    box-shadow:0 7px 18px rgba(130,60,85,.25);
+    transition:.3s;
+    animation:fadeUp 2s ease;
+}
+
+.next:hover{
+    transform:translateY(-3px);
+}
+
+.footer{
+    margin-top:20px;
+    font-size:13px;
+    opacity:.6;
+}
+
+/* Animations */
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes photoIn{
+    from{
+        opacity:0;
+        transform:scale(.94);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating hearts -->
+
+<div class="heart h1">♡</div>
+<div class="heart h2">♥</div>
+<div class="heart h3">♡</div>
+<div class="heart h4">♥</div>
+<div class="heart h5">♡</div>
+
+
+<div class="container">
+
+    <h1 class="title">Our Little Memories 🤍</h1>
+
+    <p class="subtitle">
+        Some moments become memories,<br>
+        and some memories become everything. ✨
+    </p>
+
+
+    <!-- PHOTO 1 -->
+
+    <img src="IMG-20260928-WA0027.jpg" class="photo big">
+
+
+    <!-- PHOTO 2 + PHOTO 3 -->
+
+    <div class="small">
+
+        <img src="IMG-20260928-WA0028.jpg" class="photo">
+
+        <img src="IMG-20260928-WA0029.jpg" class="photo">
+
+    </div>
+
+
+    <!-- PHOTO 4 -->
+
+    <img src="IMG-20260928-WA0030.jpg" class="photo big">
+
+
+    <!-- PHOTO 5 -->
+
+    <img src="IMG-20260928-WA0031.jpg" class="photo big">
+
+
+    <div class="memory">
+
+        <p>
+            Every picture with you is a little memory
+            that I want to keep forever. 🫶🏻
+        </p>
+
+    </div>
+
+
+    <!-- PAGE 3 BUTTON -->
+
+    <a href="page3.html" class="next">
+        Continue → 💌
+    </a>
+
+
+    <div class="footer">
+        More memories to make with you... ♡
+    </div>
+
+</div>
+
+</body>
+</html>
